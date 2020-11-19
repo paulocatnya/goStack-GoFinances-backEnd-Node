@@ -19,7 +19,7 @@ class TransactionsRepository extends Repository<Transaction> {
         switch (transaction.type) {
           case 'income':
             accumulator.income += Number(transaction.value);
-            console.log(accumulator)
+            // console.log(accumulator)
             break;
 
           case 'outcome':
